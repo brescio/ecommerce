@@ -447,3 +447,31 @@ $autoplay-duration: 5;
 }
 
 //end carousel
+.bottone {
+    position: relative;
+    text-align: center;
+   // left: 42%;
+}
+
+.myButton {
+    background-color: rgba(193, 129, 255, 1);
+    border-radius: 5px;
+    border: 1px solid #566963;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    padding: 12px 40px;
+    margin-top: 20px;;
+    text-decoration: none;
+}
+
+.myButton:hover {
+    background-color: rgba(129, 210, 248, 1);
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}

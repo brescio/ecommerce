@@ -4,6 +4,7 @@ import { clothesReducer, ClothesState } from './clothes/clothes.reducers';
 
 //interfaccia rappresentante lo stato globale
 export interface AppState {
+    [x: string]: any;
     usersState: UsersState;
     clothesState: ClothesState;
 }

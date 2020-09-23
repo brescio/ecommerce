@@ -1,0 +1,229 @@
+
+.background {
+    position: relative;
+    margin: 0;
+    height: 130px;
+    background-image: linear-gradient(90deg, rgba(129, 210, 248, 1), rgba(193, 129, 255, 1) 100%);
+}
+.content{
+    padding-top: 50px;
+}
+
+.product {
+    margin-top: 1%;
+    //position: absolute;
+    height: 450px;
+    width: 700px;
+    background-color: white;
+    //border-style: ridge;
+    //margin-left: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px black;
+    border-radius: 2%;
+    * {
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    }
+    .img {
+        padding-top: 50px;
+        padding-left: 20px;
+        height: 340px;
+        width: 250px;
+        float: left;
+    }
+
+    input[type=text] {
+        width: 350px;
+        padding: 10px;
+        border: none;
+        background-color: rgb(240, 240, 240);
+        color: gray;
+    }
+
+    .text{
+        padding-top:20px;
+    }
+
+    //MENU ITEMS
+
+    .menu{
+        padding-top:20px;
+    }
+    ul#menu li {
+        display: inline;
+        padding: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: lightgray
+    }
+
+    
+
+    //LABEL COLOR
+    .container {
+        display: inline-block;
+        position: relative;
+        padding-left: 35px;
+        padding-top: 20px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Hide the browser's default radio button */
+      .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+      
+      .checkmark-white {
+        margin-right: 18px;
+        height: 35px;
+        width: 35px;
+        background-color: white;
+        border: 1px solid gray;
+        cursor: pointer;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .checkmark-black {
+        margin-right: 18px;
+        height: 35px;
+        width: 35px;
+        background-color: black;
+        border: 1px solid gray;
+        cursor: pointer;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .checkmark-green {
+        margin-right: 20px;
+        height: 35px;
+        width: 35px;   
+        cursor: pointer;
+        border: 1px solid gray;
+        background-color: lightseagreen;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .checkmark-orange {
+        margin-right: 18px;
+        height: 35px;
+        width: 35px;
+        background-color: lightsalmon;
+        border: 1px solid gray;
+        cursor: pointer;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      
+      .container input:checked ~ .checkmark-white {
+        border:1px solid rgb(193, 129, 255);
+        }
+      }
+
+      .container input:checked ~ .checkmark-black {
+        border:1px solid rgb(193, 129, 255);
+      }
+
+      .container input:checked ~ .checkmark-orange {
+        border:1px solid rgb(193, 129, 255);
+      }
+
+      .container input:checked ~ .checkmark-green {
+        border:1px solid rgb(193, 129, 255);
+      }
+      
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      .container input:checked ~ .checkmark:after {
+        display: block;
+      }
+      
+      .container .checkmark:after {
+          top: 9px;
+          left: 9px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: white;
+      }
+
+
+      
+
+
+     //BUTTON
+    .div-button{
+        padding-right: 25px;
+    }
+
+    .bottone {
+        right: 2px;
+        padding: 15px;
+        margin-right: 20px;
+        padding-top: 25px;
+        float: right;
+        position: relative;
+    }
+    .myButton {
+        background-color: rgb(193, 129, 255);
+        border-radius: 3px;
+        border: none;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        padding: 12px 30px;
+    }
+    .myButton:hover {
+        background-color: rgba(129, 210, 248, 1);
+    }
+    .myButton:active {
+        position: relative;
+        top: 1px;
+    }
+    .bottone2 {
+        padding-top:25px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        // top: 30px;
+        float: left;
+        position: relative;
+    }
+    .myButton2 {
+        background-color: white;
+        border: 1px solid rgb(193, 129, 255);
+        border-radius: 3px;
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(193, 129, 255);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        padding: 12px 30px;
+    }
+    .myButton2:hover {
+        background-color: rgb(193, 129, 255);
+        color: white;
+        border-color: rgb(193, 129, 255);
+    }
+    .myButton2:active {
+        position: relative;
+        top: 1px;
+    }

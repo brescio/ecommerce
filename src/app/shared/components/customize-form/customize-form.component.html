@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<!-- Ok, da sistemare cambio colore della maglia. Per il resto OK -->
+<div class="background">
+    <div class="product">
+        <form [formGroup]="clothesForm" (ngSubmit)="confirmChanges()">
+
+            <img src="{{clothes.imgPath}}" class="img">
+
+            <div class="content">
+                <!-- Name -->
+                <div class="text">
+                    <input type="text" class="name" formControlName="name" >
+                </div>
+               
+            
+                <!-- Color -->
+                    <label class="container">
+                        <input type="radio" value="white" formControlName="color">
+                        <span class="checkmark-white"></span>
+                    </label>
+
+                    <label class="container">
+                        <input type="radio" value="black" formControlName="color">
+                        <span class="checkmark-black"></span>
+                    </label>
+
+                    <label class="container">
+                        <input type="radio" value="green" formControlName="color">
+                        <span class="checkmark-green"></span>
+                    </label>
+
+                    <label class="container">
+                        <input type="radio" value="orange" formControlName="color">
+                        <span class="checkmark-orange"></span>
+                    </label>
+    
+                <!-- Text -->
+                <div class="text">
+                    <input type="text" class="name" formControlName="text" >
+                </div>
+                
+            
+                <!-- Text color -->
+                <label class="container">
+                    <input type="radio" value="white" formControlName="textColor">
+                    <span class="checkmark-white"></span>
+                </label>
+
+                <label class="container">
+                    <input type="radio" value="black" formControlName="textColor">
+                    <span class="checkmark-black"></span>
+                </label> <br>
+                
+                <!-- Button confirmation -->
+                <!-- <button (click)="cancel()" type="button">Annulla</button> -->
+                <!-- <button type="submit" [disabled]="clothesForm.invalid">Conferma</button> -->
+
+                <div class="div-button">
+                    <div class="bottone">
+                        <!-- <a class="myButton">AGGIUNGI AL CARRELLO</a> -->
+                        <button class="myButton" type="submit" [disabled]="clothesForm.invalid">VAI AL CARRELLO</button>
+                    </div>
+                    <div class="bottone2">
+                        <!-- <a class="myButton2">RIPRISTINA</a> -->
+                        <button class="myButton2" (click)="cancel()" type="button">RIPRISTINA</button>
+                    </div>
+                </div>
+            </div>
+           
+        </form>
+    </div>
+</div>

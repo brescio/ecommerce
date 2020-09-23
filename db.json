@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "username": "brescio",
+      "name": "Matteo",
+      "surname": "Brescianini",
+      "password": "1234"
+    }
+  ],
+  "clothes": [
+    {
+      "id": 0,
+      "name": "Maglia",
+      "imgPath": "/assets/product/gucci.jpg",
+      "color": "white",
+      "text": "maglia con logo normale",
+      "textColor": "Black"
+    },
+    {
+      "id": 1,
+      "name": "Pantaloncini",
+      "imgPath": "/assets/product/versace.jpg",
+      "color": "Red",
+      "text": "Pantaloncini cargo",
+      "textColor": "yellow"
+    },
+    {
+      "id": 2,
+      "name": "Felpa",
+      "imgPath": "/assets/product/hermes.jpg",
+      "color": "Red",
+      "text": "Felpa ufficiale versace",
+      "textColor": "gold"
+    },
+    {
+    "id": 3,
+    "name": "gucci",
+    "imgPath": "/assets/product/samsung.jpg",
+    "color": "bianco",
+    "text": "",
+    "textColor": "bianco"
+}
+  ]
+}
